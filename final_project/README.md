@@ -1,8 +1,7 @@
 # data_analysis_python
 
-## final project ; Collaborative Filtering 을 이용한 영화 추천 시스템
-
+## final project ; EPL data analysis
 ### 사용 데이터 셋
 
-- [MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/)
+- [EPLdata_final](https://www.kaggle.com/mauryashubham/english-premier-league-players-dataset/downloads/english-premier-league-players-dataset-201718.zip/1)
 
