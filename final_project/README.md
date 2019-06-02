@@ -4,5 +4,5 @@
 
 ### 사용 데이터 셋
 
-[MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/)
+- [MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/)
 
