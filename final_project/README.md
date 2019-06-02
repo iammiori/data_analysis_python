@@ -1,19 +1,10 @@
 # data_analysis_python
-python 을 활용한 data_analysis
 
+## final project
 
-> [**LINK**](https://github.com/iammiori/data_analysis_python/issues) 로 들어가면, 공부를 위한 개념이 있다.
+## Collaborative Filtering 을 이용한 영화 추천 시스템
 
+### 사용 데이터 셋
 
-| chapter              | LINK          |main content|
-| :--------:            |:----------:   |:-------------:|
-| LINEAR & LOGISTICS REGRESSION | go [**#1**](https://github.com/iammiori/data_analysis_python/issues/1) |Supervised vs. Unsupervised learning
+[MovieLens Dataset](https://grouplens.org/datasets/movielens/latest/)
 
-
-
-
-
-
-
-
-###### reference : 2019 데이터분석개론 수업.
