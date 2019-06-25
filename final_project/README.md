@@ -57,7 +57,33 @@ EPL(English Premier League) 이적시장 기간에 맞춰,  ‘A’ 축구구단
 - watched 에 영화 이름만 바꿔주먼, 모든 상관관계를 다 구해, 영화를 5개 까지 추천해줌 (head() 때문에)
 
 -------------------------------------------------------------------------------------------
+## 3. 쇼핑몰 고객 clustering
 
+### 1. 문제정의
+‘C’ 쇼핑몰 마켓팅 담당자는 여름방학시즌을 맞이하여, 고객에게 맞춤별 할인 쿠폰을 보냄으로써, 쇼핑몰의 판매량을 증가시키려 계획을 했다. 수입에 비해, Spending Score 이 높은 고객에게는 VIP로 생각을 해서, 할인율이 더 높은 쿠폰을 주고, Spending Score이 낮은 고객에게는 흥미를 끌 어, 쇼핑몰로 오게 할 마켓팅을 진행할 예정이다.  
 
+### 2. 데이터 확보
+* 사용 데이터 셋
+  - [mall customer segmentaion data](https://www.kaggle.com/vjchoudhary7/customer-segmentation-tutorial-in-python)
+
+### 3. 데이터 전처리
+- genre (성별) feature 가 categorial 이므로 label encoder 를 써서 male 은 1 , female 으 0으로 바꿔줌
+- nan 확인 -> 없었음
+- id featrue 삭제
+- normalization 필수 (데이터의 범위가 다르므로)
+
+### 4. 알고리즘 적용
+- k means 사용  
+![kmeans](https://user-images.githubusercontent.com/46439995/60075220-c25be380-975f-11e9-9aeb-c65ce22fc928.PNG)
+- 적절한 k를 구하기 위한 elbow method (k=5 가 적절하다 판단)
+
+### 5. 결과 해석 및 시각화
+- cluster 별 feature 분석 (histogram)
+![cluster별 feature 분석](https://user-images.githubusercontent.com/46439995/60075391-27afd480-9760-11e9-92c5-37354a2fb10d.PNG)
+
+- cluster scatter plot
+![최종 plot](https://user-images.githubusercontent.com/46439995/60075452-4f9f3800-9760-11e9-8bfc-0c7cb4ec6e88.PNG)
+
+이 그래프를 통해, 오렌지 색과 골드색, 즉 cluster 3과 cluster 4 에 속하는 고객은 spending score 이 높은 고객 집단이다. 특히 오렌지색의 cluster4는 Income 이 낮음에도 불구하고 spending score가 높은 집단이다. 따라서 두 집단에게는 VIP 전용 할인 쿠폰을 보낸다면, 더욱 쇼핑몰 이용 률이 높아지고 spending score가 더 높아질 거라 기대할 수 있다. 반면 cluster 1 은 income 은 많 으나, spending score이 낮은 집단이다. 이 집단에게는 ‘C’ 쇼핑몰에 오게끔 하는 것도 하나의 홍보 일 수도 있다. 따라서 cluster 1 집단이 관심있는 상품이 있다면, 이를 홍보를 함으로써, 쇼핑몰에 오게끔 해서 구매를 유도할 수 있을 것 같다. 따라서 고객별 관심 상품데이터를 같이 분석해, 마 켓팅에 활용하면, 영업에 도움이 되지 않을까 싶다. 
 
 
