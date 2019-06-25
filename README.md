@@ -17,3 +17,5 @@ python 을 활용한 data_analysis
 
 
 ###### reference : 2019 데이터분석개론 수업.
+
+> [**LINK**](https://github.com/iammiori/data_analysis_python/tree/master/final_project) 로 들어가면, project 파일이 있다.
