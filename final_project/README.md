@@ -41,7 +41,7 @@ EPL(English Premier League) 이적시장 기간에 맞춰,  ‘A’ 축구구단
 ### 2. 데이터 확보
 * 사용 데이터 셋 (이중 movie, rating table)
   - [movielens-20m-dataset](https://www.kaggle.com/grouplens/movielens-20m-dataset )
-  - 두 talbe 을 marge 함
+  - 두 tabe 을 marge 함
 
 ### 3. 데이터 전처리
 - 평점 dataset 이라서, 별도의 정규화나, PCA 필요없음
